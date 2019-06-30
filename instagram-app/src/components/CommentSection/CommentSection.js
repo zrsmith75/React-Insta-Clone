@@ -1,7 +1,13 @@
 import React from "react";
+import Comment from "./Comment";
 
-const commentSection = props => {
-  return <div>stuff</div>;
+const CommentSection = props => {
+  const { comment } = props;
+  return (
+    <div>
+      <Comment comment={comment} />
+    </div>
+  );
 };
 
-export default commentSection;
+export default CommentSection;

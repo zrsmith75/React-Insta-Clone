@@ -6,7 +6,7 @@ const PostContainer = props => {
   // console.log(`PostContainer ${data.id}`);
   return (
     <div>
-      From PostContaier
+      <p>From PostContaier</p>
       {data.comments.map(comment => {
         return <CommentSection key={comment.id} comment={comment} />;
       })}

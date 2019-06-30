@@ -1,0 +1,51 @@
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  min-height: 20px;
+  border-bottom: 1px solid #b4b4b4;
+  margin-bottom: 1rem;
+  font-family: "Satisfy", cursive;
+}
+
+.search-bar span {
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+
+.fa-instagram {
+  font-size: 3rem;
+}
+
+.search-div {
+  width: 80%;
+  font-size: 1.8rem;
+}
+
+.vertical {
+  border-left: 1px solid #b4b4b4;
+}
+
+.search {
+  text-align: center;
+  font-size: 1rem;
+  border: 1px solid #b4b4b4;
+  width: 50%;
+}
+
+.right-icons {
+  align-self: flex-end;
+  width: 20%;
+  font-size: 2rem;
+}
+
+.right-icons i {
+  padding-left: 1rem;
+  color: black;
+}
+
+.logo {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+}

@@ -1,9 +1,7 @@
 .comment {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 1rem;
   box-shadow: 0 1px 1px #bbb;
-  width: 50%;
+  width: 90%;
   margin: 0 auto;
+  text-align: left;
+  padding: 0 2rem;
 }

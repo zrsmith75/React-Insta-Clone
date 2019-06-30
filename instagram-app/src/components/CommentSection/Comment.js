@@ -7,8 +7,9 @@ const Comment = props => {
   // console.log(props.comment);
   return (
     <div className="comment">
-      <h3>Username: {username}</h3>
-      <p>Comment: {text} </p>
+      <p>
+        <strong>{username}</strong> {text}
+      </p>
     </div>
   );
 };

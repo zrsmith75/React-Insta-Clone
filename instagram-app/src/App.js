@@ -1,8 +1,9 @@
 import React from "react";
 import SearchBar from "./components/SearchBar/SearchBar";
+import PostContainer from "./components/PostContainer/PostContainer";
+import uuid from "uuid";
 import dummyData from "./dummy-data";
 import "./App.css";
-import PostContainer from "./components/PostContainer/PostContainer";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <SearchBar />
       {dummyData.map(data => {
         // console.log(data);
-        return <PostContainer key={data.id} data={data} />;
+        return <PostContainer key={uuid()} data={data} />;
       })}
     </div>
   );

@@ -5,16 +5,21 @@ import uuid from "uuid";
 import dummyData from "./dummy-data";
 import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <SearchBar />
-      {dummyData.map(data => {
-        // console.log(data);
-        return <PostContainer key={uuid()} data={data} />;
-      })}
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    posts: [],
+    filteredPosts: []
+  };
+  render() {
+    return (
+      <div className="App">
+        <SearchBar />
+        {dummyData.map(data => {
+          // console.log(data);
+          return <PostContainer key={uuid()} data={data} />;
+        })}
+      </div>
+    );
+  }
 }
-
 export default App;

@@ -10,13 +10,32 @@ class App extends React.Component {
     posts: [],
     filteredPosts: []
   };
+
+  componentDidMount() {
+    // this.setState({ posts: data });
+  }
+
+  handleSearch = eve => {
+    const posts = this.state.posts.filter(post => {
+      if (posts.username.includes(eve.target.value)) {
+        return post;
+      }
+    });
+    this.setState({ filteredPosts: posts });
+  };
   render() {
     return (
       <div className="App">
-        <SearchBar />
+        <SearchBar handleSearch={this.handleSearch} />
         {dummyData.map(data => {
           // console.log(data);
-          return <PostContainer key={uuid()} data={data} />;
+          return (
+            <PostContainer
+              key={uuid()}
+              data={data}
+              addComment={this.addComment}
+            />
+          );
         })}
       </div>
     );
